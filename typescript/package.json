@@ -9,7 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "ts-node-dev --quiet --clear .src/index.ts",
+    "dev": "ts-node-dev --quiet --clear ./src/index.ts",
     "build": "tsc"
   },
   "keywords": [],
