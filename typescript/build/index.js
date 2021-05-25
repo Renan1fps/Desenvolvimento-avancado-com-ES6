@@ -1,10 +1,9 @@
 "use strict";
 console.log("Hello world!");
-var Produto = (function () {
-    function Produto(produtoNome, produtoValor) {
+class Produto {
+    constructor(produtoNome, produtoValor) {
         this.nome = produtoNome;
         this.valor = produtoValor;
     }
-    return Produto;
-}());
-var leite = new Produto("leite", 20);
+}
+const leite = new Produto("leite", 20);

@@ -16,6 +16,15 @@ class EmpresaDeServicosGerais extends Empresa {
   }
 }
 
-console.log(new Empresa().pretandoServico());
-console.log(new EmpresaDeServicosGerais().pretandoServico());
-console.log(new EmpresaDeVendasCAdeiras().pretandoServico());
+class ServicoPretado {
+  servicoPrestado(Empresa: Empresa) {
+    console.log(Empresa.pretandoServico());
+  }
+}
+const empresaCadeiras = new EmpresaDeVendasCAdeiras();
+const poli = new ServicoPretado();
+poli.servicoPrestado(empresaCadeiras);
+
+// console.log(new Empresa().pretandoServico());
+// console.log(new EmpresaDeServicosGerais().pretandoServico());
+// console.log(new EmpresaDeVendasCAdeiras().pretandoServico());
